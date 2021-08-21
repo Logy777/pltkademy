@@ -6,7 +6,8 @@
 # in the direcrory - create one file with list of accessed files per earch process.
 # filename = access_$PID.txt
 
-# Common steps
+# Implementation steps:
+
 # Checking the sudo rights
 if [ $(sudo id -u) != 0 ]
 then
@@ -15,7 +16,7 @@ then
 fi
 # ...
 
-# Creating /tmp/investigation/ if not exist
+# Creating /tmp/investigation/ if it not exist
 if [ ! -d /tmp/investigation ]
 then
   mkdir /tmp/investigation
@@ -24,14 +25,13 @@ fi
 
 # Get the array of java process pids from all users
 javas_pid_array=`pgrep java`
-echo $javas_pid_array
+# echo $javas_pid_array # show the pids - this line is for testing purposes
 
-# Get the list of files accessed by these founded java's pids, that include
-# - the list of accessed files at the existing main filesystem
-# ...
-# - the list of accessed files at the mounted filesystems
-# ...
-# - the list of network accessed files 
-# ...
+# Get the list of files accessed by these founded java's pids via lsof tool
+# and output thersult to the separate files according to the task description without formatting
 
-# Formatting and output according to task description
+for i in $javas_pid_array
+do
+lsof -p $i > /tmp/investigation/access_$i.txt 
+echo "File /tmp/investigation/access_$i.txt created" 
+done
