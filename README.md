@@ -24,3 +24,27 @@ java    22605  bin  924wW     REG    8,2         0   8399860 /var/atlassian/jira
 java    22605  bin  925wW     REG    8,2         0   8399862 /var/atlassian/jira/caches/indexesV1/changes/write.lock
 java    22605  bin  926wW     REG    8,2         0   8399864 /var/atlassian/jira/caches/indexesV1/worklogs/write.lock
 ```
+
+# task b
+Running test_2.sh result
+
+```bash
+denis@vmi510286 ~/ruvds/plt (master)$ ./test_2.sh 
+File ./tmp/test_1629568397_1.txt created
+File ./tmp/test_1629568397_2.txt created
+File ./tmp/test_1629568397_3.txt created
+File ./tmp/test_1629568397_4.txt created
+File ./tmp/test_1629568397_5.txt created
+File ./tmp/test_1629568397_6.txt created
+File ./tmp/test_1629568397_7.txt created
+File ./tmp/test_1629568397_8.txt created
+File ./tmp/test_1629568397_9.txt created
+File ./tmp/test_1629568397_10.txt created
+```
+
+Content example test_1629568397_10.txt
+
+```bash
+denis@vmi510286 ~/ruvds/plt (master)$ cat ./tmp/test_1629568397_10.txt
+i9tyd221ceMYBLT1QdfJIuQE2pbern9VY54pVhSjrTeEHsJDBIdZuGidBZCLPtVGuatr45zNT8Hodrr0TB3LO1pY8hXwm2vWFo91g4MWydKsnq9VRpxxVP5GWlnHlCGM2BFfiyVDcV9Mg0xuWrsGoJ81uJDqauMxKJTQFGTS4GsCIS8pDMaCiP1LfKukYxru3LJdoiEnsJXuOpOaoUl6vu0faOWx1sGTvwl7RBIihQ5HeB03xQ0NRyMIUZXwq3JbjN2L0P1NZfoSipO1XY6TEE0rJwpuXeLqn0CNHdf9wwN5hGsLazf6zmh8XUJQeqO9sUUydtvNRnSk5tupr9xJ62rMDFu4dqWTXIBzIcOHyxKQru6NjLUBamoFPiRI46499DwrOU8jKAx1hrNbi51yheKHkLFgb4Fc6FHUvWGosKeGvwSSmh9Gtpf1acSxhvrdbtk0d4sZCvHTMhbvdorLN0JIMCY8D3qa0hSw3tv64HCyxZKNBEBIZtUNwTnY7zvOPNmb3K52rdWSnhoOBYGxxQ2zVml4JSexWy7iusJV7he32HjXo6spMlAEwCeTITXOMTqByxb1cCsuILv5GkoiwqTRqyUYUyw9etHjySWhIMXWOq7CmcGZym5sI8Ws8DE7EdFWOAVnPZomBQLuFrXZ3LlbRjqqgVPM4Y1jbxNFzufVvlMfGxalOg1AL8v04Swdxs1tHb0AU93KtCePjfzjFda3tmqoxU4dV5cXkzpgHS3KKuJkdFwOzm6PvTbHAsEcLsKdKQ1ovAwf9y9Cngk9XwKAuMplSMa57nyzq0lrBdTJMojXr9lsmoVgN7PJLKEPh0TFY2M2keYEkqqhQPUGiea8fDL6tZZyyt1ByPWwubQ8OacxzcoL9ldkzrxz2WHIfR97PgykqUbYvIBPhrofIm9GiGzSvOunjrgV8X5tiKDmlFqC6GZAkkRRceRshZ5gPSpZScemJOJuJReio8q7rmszt1coOxH22wgGm8ub
+```
