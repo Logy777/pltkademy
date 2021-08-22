@@ -23,7 +23,8 @@ tr -dc A-Za-z0-9 </dev/urandom | head -c 1000 > ./tmp/test_${TIMESTAMP}_$NUM.txt
 echo "File ./tmp/test_${TIMESTAMP}_$NUM.txt created" 
 done
 
-# To schedule the script using "1 */6 * * * $PWD/test_2.sh" settings 
-# uncomment the line below
-
+# To add a crontab task for running this script at 1st minute of every 6 hour
+# it suppose to use "1 */6 * * * $PWD/test_2.sh > /dev/null" settings. 
+# To activate the settings run the attached script from the cli once
+# 
 # ./cron_script.sh
