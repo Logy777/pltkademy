@@ -28,3 +28,5 @@ done
 # To activate the settings run the attached script from the cli once
 # 
 # ./cron_script.sh
+
+exit 0

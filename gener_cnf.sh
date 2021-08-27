@@ -21,3 +21,5 @@ echo "Domain_1 name: nginx-01.com and Domain_2 name: nginx-01.com" > ./tmp/conf/
 echo "Domain_3 name: nginx-01.com and Domain_4 name: nginx-01.com" >> ./tmp/conf/test_${TIMESTAMP}_$NUM.txt
 echo "File ./tmp/conf/test_${TIMESTAMP}_$NUM.txt created" 
 done
+
+exit 0

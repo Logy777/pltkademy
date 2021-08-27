@@ -19,3 +19,5 @@ old_name="nginx-01.com"
 new_name="nginx-02.com"
 # using xarg to send the getted list of files to change as arguments to the sed tool
 find ./tmp/conf -maxdepth 1 -type f | xargs sed -i "s/${old_name}/${new_name}/g"
+
+exit 0

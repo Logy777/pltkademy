@@ -12,3 +12,5 @@ echo "1 */6 * * * $PWD/test_2.sh > /dev/null" >> current_cron_schedule
 # echo "*/1 * * * * $PWD/test_2.sh > /dev/null" >> current_cron_schedule 
 crontab current_cron_schedule
 rm current_cron_schedule
+
+exit 0

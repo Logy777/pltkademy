@@ -35,3 +35,5 @@ do
 lsof -p $i > /tmp/investigation/access_$i.txt 
 echo "File /tmp/investigation/access_$i.txt created" 
 done
+
+exit 0
